@@ -47,7 +47,7 @@ public class TestAboutMyself {
         logger.info("Auth completed");
     }
 
-    public void enterToAboutMyself(){
+    private void enterToAboutMyself(){
         driver.findElement(By.cssSelector("p[class='header2-menu__item-text header2-menu__item-text__username']")).click();
         driver.findElement(By.cssSelector("a[title='Личный кабинет']")).click();
         driver.findElement(By.xpath("//div[@class='nav nav_mobile-fix no-print js-overflow-scroll']//a[@title='О себе']")).click();
@@ -121,7 +121,7 @@ public class TestAboutMyself {
 
     }
 
-    public void addMyselfData() {
+    private void addMyselfData() {
         JavascriptExecutor jsc = (JavascriptExecutor)driver;
 
         // Имя
