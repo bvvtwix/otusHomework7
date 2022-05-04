@@ -1,4 +1,4 @@
-package WDFactory;
+package wdFactory;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.opera.OperaDriver;
 import java.util.Locale;
-import WDFactory.BrowsersName;
+
 import org.openqa.selenium.opera.OperaOptions;
 
 public class WebDriverFactory {

@@ -1,4 +1,4 @@
-package Pages;
+package pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -21,11 +21,6 @@ public class MainPage extends BasePage {
 
     public MainPage(WebDriver driver) {
         super(driver);
-    }
-
-    public MainPage open() {
-        driver.get(cfg.urlOtus());
-        return this;
     }
 
     public MainPage auth(){

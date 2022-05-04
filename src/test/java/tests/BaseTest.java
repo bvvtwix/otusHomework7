@@ -1,6 +1,6 @@
-package Tests;
+package tests;
 
-import WDFactory.WebDriverFactory;
+import wdFactory.WebDriverFactory;
 import config.ConfigServer;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.aeonbits.owner.ConfigFactory;
@@ -8,14 +8,11 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.After;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.time.Duration;
 
 public class BaseTest {
 
-    protected Logger logger = LogManager.getLogger(TestAboutMyself.class);
     protected ConfigServer cfg = ConfigFactory.create(ConfigServer.class);
     protected WebDriver driver;
 

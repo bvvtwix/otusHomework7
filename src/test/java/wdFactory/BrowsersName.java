@@ -1,4 +1,4 @@
-package WDFactory;
+package wdFactory;
 
 public enum BrowsersName {
 

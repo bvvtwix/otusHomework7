@@ -1,8 +1,8 @@
-package Tests;
+package tests;
 
-import Pages.MainPage;
-import Pages.MySelfPage;
-import WDFactory.BrowsersName;
+import pages.MainPage;
+import pages.MySelfPage;
+import wdFactory.BrowsersName;
 import data.MyselfData;
 import org.junit.Assert;
 import org.junit.Test;
@@ -18,18 +18,19 @@ public class TestAboutMyself extends BaseTest {
         initDriver();
         System.out.println(BrowsersName.CHROME.toString());
 
-        MySelfPage addMyselfData = new MainPage(driver)
-                .open()
+        MainPage addMyselfData = new MainPage(driver);
+        addMyselfData.open(cfg.urlOtus());
+        addMyselfData
                 .auth()
                 .enterToSelfArea()
                 .enterToAboutMyself()
                 .addMyselfData();
 
-        driver.quit();
-        initDriver();
+        driver.close();
 
-        MySelfPage getMySelfPage = new MainPage(driver)
-                .open()
+        MainPage checkMySelf = new MainPage(driver);
+        checkMySelf.open(cfg.urlOtus());
+        checkMySelf
                 .auth()
                 .enterToSelfArea()
                 .enterToAboutMyself();

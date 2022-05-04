@@ -1,4 +1,4 @@
-package Pages;
+package pages;
 
 import data.MyselfData;
 import org.openqa.selenium.JavascriptExecutor;
